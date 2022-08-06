@@ -12,13 +12,14 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.44;
 color: var(--form-txt-color);
-width: 280px;
+
 background-color: var(--white);
 border: transparent;
 margin-bottom: 32px;
 padding-top: 9px;
 padding-bottom: 7px;
 padding-left: 8px;
+width: calc(100% - 8px);
 @media screen and (min-width: 768px) {
     font-size: 18px;
     line-height: 1.28;
@@ -31,7 +32,7 @@ font-size: 16px;
 line-height: 1.44;
 color: var(--form-txt-color);
 background-color: var(--white);
-width: 280px;
+width: calc(100% - 8px);
 border: transparent;
 padding-top: 9px;
 padding-bottom: 7px;

@@ -5,9 +5,16 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: absolute;
+@media screen and (min-width: 768px) {
+
+    padding-left: 32px;
+    padding-right: 32px;
+    width: calc(100% - 64px);
+}
 @media screen and (min-width: 1360px) {
     padding-top: 12px;
     width: calc(100% - 56px);
+ 
 }
 
 
@@ -58,9 +65,7 @@ position: absolute;
 }
 .nav {
     display: flex;
-    @media screen and (min-width: 768px) {
-    padding-left: 73px;
-    }
+  
    
 }
 .nav__item:not(:last-child) {
