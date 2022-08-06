@@ -1,0 +1,113 @@
+.header{
+    padding-top: 20px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+@media screen and (min-width: 1360px) {
+    padding-top: 12px;
+    width: calc(100% - 56px);
+}
+
+
+ 
+}
+.contacts__link {
+    display: flex;
+    align-items: center;
+
+    &:hover .contacts__icon {
+        fill: var(--accent-color);
+    }
+
+    &:focus .contacts__icon {
+        fill: var(--accent-color);
+    }
+}
+.header__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1360px) {
+    display: flex;
+    flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+.nav {
+    display: flex;
+    @media screen and (min-width: 768px) {
+    padding-left: 73px;
+    }
+   
+}
+.nav__item:not(:last-child) {
+    margin-right: 12px;
+}
+.logo {
+    color: var(--button-color);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.13;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    @media screen and (min-width: 768px) {
+
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 1.21;
+    }
+
+    // @media screen and (min-width: 1200px) {
+    //     margin-right: 94px;
+    // }
+}
+.ledger{
+color: var(--white)
+}
+.nav__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+
+    color: var(--white);
+    position: relative;
+
+
+    &:hover,
+    &:focus {
+        border-bottom: solid 1px var(--white);
+    }
+    @media screen and (min-width: 768px) {
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.56;
+    }
+}

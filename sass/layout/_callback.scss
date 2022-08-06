@@ -1,0 +1,113 @@
+.call_title{
+        font-weight: 300;
+        font-size: 38px;
+        line-height: 1.26;
+        color: var(--text-color);
+        margin-bottom: 32px;
+  
+
+}
+.call-name{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.44;
+color: var(--form-txt-color);
+width: 280px;
+background-color: var(--white);
+border: transparent;
+margin-bottom: 32px;
+padding-top: 9px;
+padding-bottom: 7px;
+padding-left: 8px;
+@media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.28;
+    width: 316px;
+}
+}
+.call-email{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.44;
+color: var(--form-txt-color);
+background-color: var(--white);
+width: 280px;
+border: transparent;
+padding-top: 9px;
+padding-bottom: 7px;
+padding-left: 8px;
+@media screen and (min-width: 768px) {
+ font-size: 18px;
+ line-height: 1.28;
+width: 316px;
+}
+
+}
+.callback{
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+
+   
+    @media screen and (min-width: 768px) {
+   padding: 0;
+   flex-direction: row;
+    }
+}
+
+.call_btn{
+            background-color: var(--button-color);
+        
+            color: var(--white);
+            width: 280px;
+            height: 42px;
+            border-radius: 5px;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       text-align: center;
+       margin-top: 40px;
+    @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 42px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.38;
+    
+   
+    }
+}
+.call-wrapper{
+padding: 40px 20px 40px 20px;
+@media screen and (min-width: 768px) {
+    
+
+padding: 40px 32px 40px 32px;
+}
+}
+.call{
+    @media screen and (min-width: 768px) {
+ 
+    
+        display: flex;
+flex-direction: column;
+    }
+
+}
+.container_call{
+    @media screen and (min-width: 768px) {
+ 
+    display: flex;
+    flex-direction: row;
+    
+    }
+    
+}
+.call_i{
+    @media screen and (min-width: 768px) {
+    object-fit: cover;
+    height: 354px;
+    width: 368px;}
+}

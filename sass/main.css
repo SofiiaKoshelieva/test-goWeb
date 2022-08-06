@@ -1,0 +1,145 @@
+:root {
+  --button-color:#28A745;
+  --bg-color:#F4F4F4;
+  --blog-color:#0284D0;
+  --team-color:#E5E5E5;
+  --text-color:#333333;
+  --form-txt-color:#808080;
+  --white:#FFFFFF;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+input {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 360px) {
+  .container {
+    width: 360px;
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 40px 36px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .container {
+    width: 1360px;
+    padding: 80px 28px;
+  }
+}
+
+body {
+  font-family: "Open Sans",sans-serif;
+  letter-spacing: 0.02em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  cursor: pointer;
+  border: transparent;
+}
+
+.header {
+  padding-top: 20px;
+}
+
+.contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__link:hover .contacts__icon {
+  fill: var(--accent-color);
+}
+
+.contacts__link:focus .contacts__icon {
+  fill: var(--accent-color);
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.logo {
+  color: var(--button-color);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.13;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 94px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

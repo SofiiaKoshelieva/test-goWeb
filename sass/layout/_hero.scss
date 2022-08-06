@@ -1,0 +1,106 @@
+.hero {
+    padding: 96px 0;
+    background-image: 
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+
+        url(../../images/home/showcase.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: inear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url(../../images/home/showcase@2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+    
+        background-image: inear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url(../images/hero-tab.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: inear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(../images/hero-tab2x.jpg);
+        }
+       
+            padding: 407px 141px 410px 134px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 0;
+        background-image:inear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url(../images/main-bg.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:inear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(../images/hero2x.jpg);
+        }
+    }
+}
+.hero__title {
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 1.27;
+    color: var(--hero-title-color);
+    margin-bottom: 20px;
+
+
+    @media screen and (min-width: 768px) {
+    font-weight: 300;
+    font-size: 55px;
+    line-height: 1.20;
+    }
+}
+.hero__paragraph{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.67;
+    color: var(--hero-title-color);
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.67;
+    }
+}
+.hero__button{
+    background-color: var(--button-color);
+    color: var(--white);
+    width: 156px;
+    height: 45px;
+    border-radius: 5px;
+    padding: 10px 29px;
+    @media screen and (min-width: 768px) {
+        width: 165px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.56;
+        padding: 0;
+        width: 165px;
+        height: 48px;
+    }
+}
+.arrow__icon{
+    @media screen and (max-width: 767px) {
+    & {
+        display: none;
+    }
+    }
+ 
+    @media screen and (min-width: 768px) {
+    width: 7.26px;
+    height: 11.25px;
+    margin-right: 4px;
+    }
+
+
+}

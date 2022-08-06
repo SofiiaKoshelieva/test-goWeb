@@ -1,0 +1,113 @@
+.team_list{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+       flex-direction: row;
+    }
+}
+
+
+.team__img-paragraph{
+margin-top: 12px;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.60;
+color: var(--text-color);
+@media screen and (min-width: 768px) {
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+}
+
+
+
+}
+.team__img-title{
+margin-top: 16px;
+font-weight: 400;
+font-size: 23px;
+line-height: 1.25;
+color: var(--text-color);
+@media screen and (min-width: 768px) {
+
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.27;
+}
+}
+
+.team_pre-title{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.65;
+        margin-bottom: 24px;
+    }
+}
+.team_title{
+        font-weight: 300;
+        font-size: 38px;
+        line-height: 1.26;
+        color: var(--text-color);
+        margin-bottom: 20px;
+        @media screen and (min-width: 768px) {
+            font-weight: 300;
+            font-size: 38px;
+            line-height: 1.26;
+                margin-bottom: 24px;
+        }
+}
+.team_paragraph{
+    font-weight: 00;
+    font-size: 16px;
+    line-height: 1.60;
+    color: var(--text-color);
+    @media screen and (min-width: 768px) {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 1.66;
+    }
+}
+.team_txt{
+    padding: 40px 50px 20px 50px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        padding-top: 40px;
+        padding-bottom: 24px;
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+}
+
+.team-item{
+    width: 280px;
+&:not(:last-child){
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+    width: 223px;
+    &:not(:last-child) {
+        margin-bottom: 0px;
+    }
+    flex-basis: calc((100% - 36px) / 3);
+        &:not(:last-child) {
+            margin-right: 18px;
+        }
+}
+}
+.team{
+  
+            padding-bottom: 40px;
+    
+
+}
