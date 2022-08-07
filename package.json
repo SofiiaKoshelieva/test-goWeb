@@ -14,7 +14,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build index.html"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,9 @@
     "url": "https://github.com/SofiiaKoshelieva/test-goWeb/issues"
   },
   "homepage": "https://github.com/SofiiaKoshelieva/test-goWeb#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
 }
