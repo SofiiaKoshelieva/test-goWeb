@@ -1034,6 +1034,7 @@ a {
   padding-top: 9px;
   padding-bottom: 7px;
   padding-left: 8px;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -1117,6 +1118,10 @@ a {
   }
 }
 
+.call {
+  position: relative;
+}
+
 @media screen and (min-width: 768px) {
   .call {
     display: flex;
@@ -1124,11 +1129,23 @@ a {
   }
 }
 
+.container_call {
+  position: relative;
+}
+
 @media screen and (min-width: 768px) {
   .container_call {
     display: flex;
     flex-direction: row;
   }
+}
+
+.call-name:focus ~ .label_name {
+  top: -22px;
+}
+
+.call-email:focus ~ .label_email {
+  top: 50px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1144,6 +1161,46 @@ a {
     height: 454px;
     width: 670px;
   }
+}
+
+.label_name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.44;
+  color: var(--form-txt-color);
+  position: absolute;
+  top: 10px;
+  left: 8px;
+}
+
+.label_email {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.44;
+  color: var(--form-txt-color);
+  position: absolute;
+  top: 80px;
+  left: 8px;
+}
+
+.warning {
+  color: red;
+}
+
+.warning-cont {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: absolute;
+  top: 115px;
+}
+
+#callemail {
+  position: relative;
+}
+
+.display--none {
+  display: none;
 }
 
 .footer {
