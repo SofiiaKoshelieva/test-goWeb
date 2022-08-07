@@ -20,13 +20,13 @@
     @media screen and (min-width: 768px) {
     
         background-image: inear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url(../images/hero-tab.jpg);
+            url(../../images/home/showcase.jpg);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: inear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url(../images/hero-tab2x.jpg);
+                url(../../images/home/showcase@2x.jpg);
         }
        
             padding: 407px 141px 410px 134px;
@@ -35,13 +35,13 @@
     @media screen and (min-width: 1200px) {
         padding: 0;
         background-image:inear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url(../images/main-bg.jpg);
+            url(../../images/home/showcase.jpg);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image:inear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url(../images/hero2x.jpg);
+                url(../../images/home/showcase@2x.jpg);
         }
     }
 }
