@@ -7,6 +7,11 @@
      border-top:  solid 40px var(--white);
 
     }
+    @media screen and (min-width: 1360px) {
+    
+        border-top: none
+    
+    }
 
 }
 // .social__icon{
@@ -14,6 +19,14 @@
 //     height: 35px;
   
 // }
+.social__link{
+    fill: var(--white);
+    &:hover,
+    &:focus {
+      fill:var(--button-color)
+    }
+}
+
 .footer_paragraph{
         font-weight: 400;
         font-size: 16px;

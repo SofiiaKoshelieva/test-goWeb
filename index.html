@@ -8,6 +8,8 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="./css/main.min.css" />
+<link href="path/to/lightbox.css" rel="stylesheet" />
+  
 </head>
 <body>
     <header class="header">
@@ -21,19 +23,19 @@
                 </a>
                 <ul class="nav">
                     <li class="nav__item ">
-                        <a class="nav__link current " href="index.html">Home</a>
+                        <a class="nav__link current " href="#home">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link " href="/">About</a>
+                        <a class="nav__link " href="#about">About</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="/">Cases</a>
+                        <a class="nav__link" href="#cases">Cases</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="/">Blog</a>
+                        <a class="nav__link" href="#blog">Blog</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="/">Contact</a>
+                        <a class="nav__link" href="#contact">Contact</a>
                     </li>
                 </ul>
                
@@ -42,7 +44,7 @@
 
     </header>
     <main>
-       <section class="hero">
+       <section class="hero" id="home">
            <div class="container">
                <h1 class="hero__title">The Sky Is The Limit</h1>
                <p class="hero__paragraph">We provide world class financial assistance</p>
@@ -51,7 +53,7 @@
 </svg>Read More</button>
            </div>
        </section>
-       <section class="solution ">
+       <section class="solution " id="about">
            <div class="container container-solution">
                <div class="solution_img-wrapper">
                    <img class="solution_img" srcset="./images/home/people.jpg 1x, ./images/home/people@2x.jpg 2x"
@@ -67,50 +69,51 @@
               
            </div>
        </section>
-       <section class="cases">
+       <section class="cases" id="cases">
 <div class="container cases_container">
     <div class="cases-text"><h3 class="cases_pre-title">This is what we do</h3>
     <h2 class="cases-title">Business Cases</h2>
     <p class="cases-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p></div>
-    <ul class="cases-img">
+    <ul class="cases-img gallery">
         <li class="cases-item"><div class="img__wrapper">
             <picture>
                 <source srcset="./images/cases/cases1.jpg 1x , ./images/cases/cases1@2x.jpg 2x " media="(min-width: 320px)">
-                <img class="main-img" src="./images/cases/cases1.jpg" width="280" height="176" alt="" />
+                <a href="./images/cases/cases1.jpg" data-lightbox="image">    <img class="main-img" src="./images/cases/cases1.jpg" width="280" height="176" alt="" /></a>
+            
             </picture> </div></li>
             <li class="cases-item">
                 <div class="img__wrapper">
                     <picture>
                         <source srcset="./images/cases/cases2.jpg 1x , ./images/cases/cases2@2x.jpg 2x " media="(min-width: 320px)">
-                        <img class="main-img" src="./images/cases/cases2.jpg" width="280" height="176" alt="" />
+                        <a href="./images/cases/cases2.jpg" data-lightbox="image"><img class="main-img" src="./images/cases/cases2.jpg" width="280" height="176" alt="" /></a>
                     </picture>
                 </div>
             </li><li class="cases-item">
                 <div class="img__wrapper">
                     <picture>
                         <source srcset="./images/cases/cases3.jpg 1x , ./images/cases/cases3@2x.jpg 2x " media="(min-width: 320px)">
-                        <img class="main-img" src="./images/cases/cases3.jpg" width="280" height="176" alt="" />
+                    <a href="./images/cases/cases3.jpg" data-lightbox="image"><img class="main-img" src="./images/cases/cases3.jpg" width="280" height="176" alt="" /></a> 
                     </picture>
                 </div>
             </li><li class="cases-item">
                 <div class="img__wrapper">
                     <picture>
                         <source srcset="./images/cases/cases4.jpg 1x , ./images/cases/cases4@2x.jpg 2x " media="(min-width: 320px)">
-                        <img class="main-img" src="./images/cases/cases4.jpg" width="280" height="176" alt="" />
+                        <a href="./images/cases/cases4.jpg" data-lightbox="image"><img class="main-img" src="./images/cases/cases4.jpg" width="280" height="176" alt="" /></a>
                     </picture>
                 </div>
             </li><li class="cases-item">
                 <div class="img__wrapper">
                     <picture>
                         <source srcset="./images/cases/cases5.jpg 1x , ./images/cases/cases5@2x.jpg 2x " media="(min-width: 320px)">
-                        <img class="main-img" src="./images/cases/cases5.jpg" width="280" height="176" alt="" />
+                    <a href="./images/cases/cases5.jpg" data-lightbox="image"> <img class="main-img" src="./images/cases/cases5.jpg" width="280" height="176" alt="" /></a>
                     </picture>
                 </div>
             </li><li class="cases-item">
                 <div class="img__wrapper">
                     <picture>
                         <source srcset="./images/cases/cases7.jpg 1x , ./images/cases/cases7@2x.jpg 2x " media="(min-width: 320px)">
-                        <img class="main-img" src="./images/cases/cases7.jpg" width="280" height="176" alt="" />
+                    <a href="./images/cases/cases7.jpg" data-lightbox="image" > <img class="main-img" src="./images/cases/cases7.jpg" width="280" height="176" alt="" /></a>
                     </picture>
                 </div>
             </li>
@@ -118,7 +121,7 @@
     </ul>
 </div>
        </section>
-       <section class="blog">
+       <section class="blog" id="blog">
            <div class="container blog-container">
                <div class="blog-img"><picture>
                 <source srcset="./images/home/blog.jpg 1x , ./images/home/blog@2x.jpg 2x " media="(min-width: 320px)">
@@ -134,7 +137,7 @@ aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus 
 
            </div>
        </section>
-       <section class="team">
+       <section class="team" >
            <div class="container">
                <div class="team_txt"> <h3 class="team_pre-title">Who we are</h3>
                <h2 class="team_title">Our Professional Team</h2>
@@ -142,50 +145,152 @@ aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus 
                <ul class="team_list">
                     <li class="team-item">
                         <div class="img__wrapper">
-                            <picture>
+                            <div class="social-img">
+                           <picture>
                                 <source srcset="./images/team/person1.jpg 1x , ./images/team/person1@2x.jpg 2x " media="(min-width: 320px)">
                                 <img class="main-img" src="./images/team/person1.jpg" width="280" height="176" alt="" />
-                            </picture>
+                            </picture><ul class="team_social">
+                                <li class="team-social__item"><a href="" class="team-social__link">
+                                        <svg class="team-social__icon" width="35px" height="35px">
+                                            <use href="./images/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a></li>
+                                <li class="team-social__item"><a href="" class="team-social__link">
+                                        <svg class="team-social__icon" width="35px" height="35px">
+                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a></li>
+                                <li class="team-social__item"><a href="" class="team-social__link">
+                                        <svg class="team-social__icon" width="40px" height="35px">
+                                            <use href="./images/sprite.svg#icon-youtube"></use>
+                                        </svg>
+                                    </a></li>
+                                <li class="team-social__item"><a href="https://www.linkedin.com/in/sofiiakoshelieva/" class="team-social__link">
+                                        <svg class="team-social__icon" width="31px" height="35px">
+                                            <use href="./images/sprite.svg#icon-in"></use>
+                                        </svg>
+                                    </a></li>
+                            
+                            </ul>
+                            </div>
                             <div class="case">
                                 <h3 class="team__img-title">John Doe</h2>
                                     <p class="team__img-paragraph">President</p>
                             </div>
-                        </div>
+                           
                     </li><li class="team-item">
                         <div class="img__wrapper">
+                            <div class="social-img">
                             <picture>
                                 <source srcset="./images/team/person2.jpg 1x , ./images/team/person2@2x.jpg 2x " media="(min-width: 320px)">
                                 <img class="main-img" src="./images/team/person2.jpg" width="280" height="176" alt="" />
-                            </picture>
+                            </picture><ul class="team_social">
+                                <li class="team-social__item"><a href="" class="team-social__link">
+                                        <svg class="team-social__icon" width="35px" height="35px">
+                                            <use href="./images/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a></li>
+                                <li class="team-social__item"><a href="" class="team-social__link">
+                                        <svg class="team-social__icon" width="35px" height="35px">
+                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a></li>
+                                <li class="team-social__item"><a href="" class="team-social__link">
+                                        <svg class="team-social__icon" width="40px" height="35px">
+                                            <use href="./images/sprite.svg#icon-youtube"></use>
+                                        </svg>
+                                    </a></li>
+                                <li class="team-social__item"><a href="https://www.linkedin.com/in/sofiiakoshelieva/" class="team-social__link">
+                                        <svg class="team-social__icon" width="31px" height="35px">
+                                            <use href="./images/sprite.svg#icon-in"></use>
+                                        </svg>
+                                    </a></li>
+                            
+                            </ul>
+                            </div>
                             <div class="case">
                                 <h3 class="team__img-title">Jane Doe</h2>
                                     <p class="team__img-paragraph">Vice President</p>
                             </div>
+                           
                         </div>
-                    </li><li class="team-item">
+                    </li>
+                    <li class="team-item">
                         <div class="img__wrapper">
-                            <picture>
+                            <div class="social-img">
+                            <picture >
                                 <source srcset="./images/team/person3.jpg 1x , ./images/team/person3@2x.jpg 2x " media="(min-width: 320px)">
                                 <img class="main-img" src="./images/team/person3.jpg" width="280" height="176" alt="" />
-                            </picture>
+                             </picture>
+                              <ul class="team_social">
+                                <li class="team-social__item"><a href="" class="team-social__link">
+                                        <svg class="team-social__icon" width="35px" height="35px">
+                                            <use href="./images/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a></li>
+                                <li class="team-social__item"><a href="" class="team-social__link">
+                                        <svg class="team-social__icon" width="35px" height="35px">
+                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a></li>
+                                <li class="team-social__item"><a href="" class="team-social__link">
+                                        <svg class="team-social__icon" width="40px" height="35px">
+                                            <use href="./images/sprite.svg#icon-youtube"></use>
+                                        </svg>
+                                    </a></li>
+                                <li class="team-social__item"><a href="https://www.linkedin.com/in/sofiiakoshelieva/" class="team-social__link">
+                                        <svg class="team-social__icon" width="31px" height="35px">
+                                            <use href="./images/sprite.svg#icon-in"></use>
+                                        </svg>
+                                    </a></li>
+                            
+                             </ul>
+                            </div>
                             <div class="case">
                                 <h3 class="team__img-title">Steve Smith</h2>
                                 <p class="team__img-paragraph">Marketing Head</p>
+                                
                             </div>
+                           
                         </div>
                     </li>
                </ul>
            
            </div>
-       </section>
-       <section class='callback'>
+    </section> 
+
+       <section class='callback' id="contact">
   
         <div class="container container_call ">
              <div class="callback_img">
+                 
                 <picture>
                     <source srcset="./images/home/contact.jpg 1x , ./images/home/contact@2x.jpg 2x " media="(min-width: 320px)">
                     <img class="call_i" src="./images/home/contact.jpg" alt="" />
-                </picture>
+                </picture><ul class="team_social">
+                    <li class="team-social__item"><a href="" class="team-social__link">
+                            <svg class="team-social__icon" width="35px" height="35px">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a></li>
+                    <li class="team-social__item"><a href="" class="team-social__link">
+                            <svg class="team-social__icon" width="35px" height="35px">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a></li>
+                    <li class="team-social__item"><a href="" class="team-social__link">
+                            <svg class="team-social__icon" width="40px" height="35px">
+                                <use href="./images/sprite.svg#icon-youtube"></use>
+                            </svg>
+                        </a></li>
+                    <li class="team-social__item"><a href="https://www.linkedin.com/in/sofiiakoshelieva/" class="team-social__link">
+                            <svg class="team-social__icon" width="31px" height="35px">
+                                <use href="./images/sprite.svg#icon-in"></use>
+                            </svg>
+                        </a></li>
+                
+                </ul>
+                </div>
             </div>
             <div class="call-wrapper">
             <h2 class="call_title">Request Callback</h2>
@@ -227,5 +332,10 @@ aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus 
             <p class="footer_paragraph">Copyright © 2021 - FinanceLedger</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js//header.js"></script>
+    <script src="./index.js"></script>
+<script src="path/to/lightbox.js"></script>
 </body>
 </html>

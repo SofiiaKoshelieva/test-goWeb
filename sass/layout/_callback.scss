@@ -25,6 +25,10 @@ width: calc(100% - 8px);
     line-height: 1.28;
     width: 316px;
 }
+@media screen and (min-width: 1360px) {
+
+    width: 620px;
+}
 }
 .call-email{
 font-weight: 400;
@@ -41,6 +45,10 @@ padding-left: 8px;
  font-size: 18px;
  line-height: 1.28;
 width: 316px;
+}
+@media screen and (min-width: 1360px) {
+   
+    width: 620px;
 }
 
 }
@@ -70,6 +78,7 @@ width: 316px;
        padding-bottom: 10px;
        text-align: center;
        margin-top: 40px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 768px) {
     width: 336px;
     height: 42px;
@@ -79,6 +88,15 @@ width: 316px;
     
    
     }
+    @media screen and (min-width: 1360px) {
+    
+        width: 642px;
+        margin-top: 60px;
+    }
+    &:hover,
+    &:focus {
+        opacity: 0.8;
+    }
 }
 .call-wrapper{
 padding: 40px 20px 40px 20px;
@@ -86,6 +104,9 @@ padding: 40px 20px 40px 20px;
     
 
 padding: 40px 32px 40px 32px;
+}@media screen and (min-width: 1360px) {
+    padding: 80px 28px 80px 20px;
+    width: 100%;
 }
 }
 .call{
@@ -111,4 +132,8 @@ flex-direction: column;
     object-fit: cover;
     height: 354px;
     width: 368px;}
+    @media screen and (min-width: 1360px) {
+        height: 454px;
+        width: 670px;
+    }
 }

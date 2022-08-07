@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "global": "^4.4.0",
+    "lightbox2": "^2.11.3",
+    "parcel-bundler": "^1.12.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "simplelightbox": "^2.10.3"
+  },
+  "name": "test-goweb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SofiiaKoshelieva/test-goWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SofiiaKoshelieva/test-goWeb/issues"
+  },
+  "homepage": "https://github.com/SofiiaKoshelieva/test-goWeb#readme",
+  "description": ""
+}

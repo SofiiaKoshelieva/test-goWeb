@@ -1,8 +1,6 @@
 .hero {
     padding: 96px 0;
-    background-image: 
-    linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(../../images/home/showcase.jpg);
 
     background-repeat: no-repeat;
@@ -18,31 +16,13 @@
     }
 
     @media screen and (min-width: 768px) {
-    
-        background-image: inear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url(../../images/home/showcase.jpg);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: inear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url(../../images/home/showcase@2x.jpg);
-        }
-       
+  
             padding: 407px 141px 410px 134px;
     }
 
-    @media screen and (min-width: 1200px) {
-        padding: 0;
-        background-image:inear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url(../../images/home/showcase.jpg);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image:inear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url(../../images/home/showcase@2x.jpg);
-        }
+    @media screen and (min-width: 1360px) {
+        padding: 279px 436px 282px 431px;
+        
     }
 }
 .hero__title {
@@ -57,6 +37,11 @@ padding-top: 40px;
     font-weight: 300;
     font-size: 55px;
     line-height: 1.20;
+    padding-top: 0;
+    }
+    @media screen and (min-width: 1360px) {
+      padding-top: 0;
+      margin-bottom: 24px;
     }
 }
 .hero__paragraph{
@@ -71,6 +56,10 @@ padding-top: 40px;
         font-size: 22px;
         line-height: 1.67;
     }
+    @media screen and (min-width: 1360px) {
+     
+        margin-bottom: 32px;
+    }
 }
 .hero__button{
     background-color: var(--button-color);
@@ -79,6 +68,7 @@ padding-top: 40px;
     height: 45px;
     border-radius: 5px;
     padding: 10px 29px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 768px) {
         width: 165px;
         font-weight: 400;
@@ -87,6 +77,10 @@ padding-top: 40px;
         padding: 0;
         width: 165px;
         height: 48px;
+    }
+    &:hover,
+    &:focus{
+opacity: 0.8;
     }
 }
 .arrow__icon{

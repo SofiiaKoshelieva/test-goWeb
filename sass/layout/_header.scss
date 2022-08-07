@@ -4,7 +4,7 @@ width: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
-position: absolute;
+position: absolute;padding-bottom: 20px;
 @media screen and (min-width: 768px) {
 
     padding-left: 32px;
@@ -13,8 +13,10 @@ position: absolute;
 }
 @media screen and (min-width: 1360px) {
     padding-top: 12px;
+    padding-bottom: 15px;
     width: calc(100% - 56px);
- 
+    padding-left: 28px;
+    padding-right: 28px;
 }
 
 
@@ -24,13 +26,7 @@ position: absolute;
     display: flex;
     align-items: center;
 
-    &:hover .contacts__icon {
-        fill: var(--accent-color);
-    }
-
-    &:focus .contacts__icon {
-        fill: var(--accent-color);
-    }
+  
 }
 .header__container{
     display: flex;
@@ -70,6 +66,12 @@ position: absolute;
 }
 .nav__item:not(:last-child) {
     margin-right: 12px;
+    @media screen and (min-width: 768px) {
+        margin-right: 20px;
+    }
+    @media screen and (min-width: 1360px) {
+    margin-right: 40px;
+    }
 }
 .logo {
     color: var(--button-color);
@@ -80,7 +82,7 @@ position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-
+transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 768px) {
 
@@ -88,7 +90,10 @@ position: absolute;
         font-size: 35px;
         line-height: 1.21;
     }
-
+&:hover,
+&:focus{
+scale: 1.05;
+}
     // @media screen and (min-width: 1200px) {
     //     margin-right: 94px;
     // }
@@ -104,10 +109,9 @@ color: var(--white)
     color: var(--white);
     position: relative;
 
-
-    &:hover,
-    &:focus {
-        border-bottom: solid 1px var(--white);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover{
+        border-bottom: solid 1.5px var(--hover-color);
     }
     @media screen and (min-width: 768px) {
 
@@ -115,4 +119,11 @@ color: var(--white)
         font-size: 18px;
         line-height: 1.56;
     }
+}
+.header_fixed{
+    position: fixed;
+    top:0;
+    left: 0;
+   background-color: rgba(56, 56, 56, 0.8);
+   z-index: 100;
 }
